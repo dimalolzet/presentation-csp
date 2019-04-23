@@ -1,3 +1,12 @@
+#intro-image {
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  max-height: 70%;
+}
+
 #definition-image {
   position: absolute;
   right: 0;
@@ -5,4 +14,9 @@
   z-index: -1;
   max-height: 50%;
   opacity: .7;
+}
+
+#schema-image {
+  display: block;
+  max-width: 100%;
 }
