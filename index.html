@@ -94,6 +94,16 @@
 </section>
 
 <section class="slide">
+  <h1>Способы конфигурации CSP</h1>
+
+  <ul>
+    <li>Конфигурация заголовка на веб-сервере</li>
+    <li>Добавление заголовка на уровне серверного приложения</li>
+    <li>&lt;meta&gt; тег на странице <em>(есть директивы-исключения)</em></li>
+  </ul>
+</section>
+
+<section class="slide">
   <h1>Огласите весь список, пожалуйста</h1>
 
   <ul class="list-3col">
@@ -291,7 +301,7 @@
 
   <p><code>frame-ancestors [media-type]</code></p>
 
-  <p>Загружает ресурс только при условии нахождения его типа в белом списке и совпадении описанного типа с загружемым по факту</p>
+  <p>Загружает ресурс только при условии нахождения его MIME type в белом списке и совпадении указанного типа с загружемым по факту</p>
 
   <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-plugin-types">https://www.w3.org/TR/CSP2/#directive-plugin-types</a></p>
 </section>
