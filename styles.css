@@ -1,5 +1,9 @@
-#intro-image {
+img {
+  display: block;
   max-width: 100%;
+}
+
+#intro-image {
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -16,7 +20,29 @@
   opacity: .7;
 }
 
-#schema-image {
-  display: block;
-  max-width: 100%;
+.list-2col {
+  column-count: 2;
+}
+
+.list-3col {
+  column-count: 3;
+}
+
+.badge-mark {
+  display: inline-block;
+  font-size: 50%;
+  vertical-align: middle;
+  border-radius: 10px;
+  padding: 3px 7px;
+  line-height: 1;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.badge-mark_green {
+  background-color: #43a047;
+}
+
+.badge-mark_red {
+  background-color: #f44336;
 }

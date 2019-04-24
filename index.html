@@ -41,11 +41,82 @@
   <p>
     <strong>CSP</strong> – штука, позволяющая сформировать белый список доверенных ресурсов, которые могут загружаться на веб-странице.
   </p>
+
+  <br>
+
+  <figure>
+    <blockquote>
+      <p>Всё, что не разрешено – запрещено.</p>
+    </blockquote>
+    <figcaption>Капитан Очевидность</figcaption>
+  </figure>
 </section>
 
 <section class="slide">
   <h1>А на картинке?</h1>
-  <img id="schema-image" src="pictures/schema.png" alt="Schema">
+  <img src="pictures/schema.png" alt="Schema">
+</section>
+
+<section class="slide">
+  <h1>Что по поддержке браузерами?</h1>
+
+  <img src="pictures/browser-support-level1.png" alt="CSP Level 1">
+</section>
+
+<section class="slide">
+  <h1>CSP Level 2</h1>
+
+  <img src="pictures/browser-support-level2.png" alt="CSP Level 1">
+</section>
+
+<section class="slide">
+  <h1>Ближе к делу</h1>
+
+  <p>
+    <code>Content-Security-Policy</code> – общий заголовок
+  </p>
+  <p>
+    <code>Content-Security-Policy-Report-Only</code> – режим сообщения о нарушениях
+  </p>
+</section>
+
+<section class="slide">
+  <h1>Огласите весь список, пожалуйста</h1>
+
+  <ul class="list-3col">
+    <li>default-src</li>
+    <li>script-src</li>
+    <li>style-src</li>
+    <li>img-src</li>
+    <li>connect-src</li>
+    <li>font-src</li>
+    <li>object-src</li>
+    <li>media-src</li>
+    <li>frame-src <span class="badge-mark badge-mark_red">Deprecated</span></li>
+    <li>child-src</li>
+    <li>sandbox</li>
+    <li>report-uri</li>
+    <li>form-action <span class="badge-mark badge-mark_green">Level 2</span></li>
+    <li>frame-ancestors <span class="badge-mark badge-mark_green">Level 2</span></li>
+    <li>plugin-types <span class="badge-mark badge-mark_green">Level 2</span></li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h1>default-src</h1>
+
+  <p>Задаёт стандартные политики, которые будут использованы в случае отсутствия следующих директив:</p>
+
+  <ul class="list-2col">
+    <li>child-src</li>
+    <li>connect-src</li>
+    <li>font-src</li>
+    <li>img-src</li>
+    <li>media-src</li>
+    <li>object-src</li>
+    <li>script-src</li>
+    <li>style-src</li>
+  </ul>
 </section>
 
 <div class="progress"></div>
