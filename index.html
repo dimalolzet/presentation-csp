@@ -103,6 +103,29 @@
 </section>
 
 <section class="slide">
+  <h1>Возможные значения -src директив</h1>
+
+  <table>
+    <tr>
+      <th>Source</th>
+      <td><code>https://google.com</code> <code>google.com:443</code> <code>https:</code> <code>data:</code></td>
+    </tr>
+    <tr>
+      <th>Keyword</th>
+      <td><code>*</code> <code>'none'</code> <code>'self'</code> <code>'unsafe-inline'</code> <code>'unsafe-eval'</code></td>
+    </tr>
+    <tr>
+      <th>Hash</th>
+      <td><code>'sha256-...'</code> <code>'nonce-...'</code></td>
+    </tr>
+  </table>
+
+  <p>
+    <a href="https://www.w3.org/TR/CSP2/#source_list">https://www.w3.org/TR/CSP2/#source_list</a>
+  </p>
+</section>
+
+<section class="slide">
   <h1>default-src</h1>
 
   <p>Задаёт стандартные политики, которые будут использованы в случае отсутствия следующих директив:</p>
@@ -117,6 +140,10 @@
     <li>script-src</li>
     <li>style-src</li>
   </ul>
+</section>
+
+<section class="slide">
+  <h1>[Слайды с описанием директив]</h1>
 </section>
 
 <div class="progress"></div>
