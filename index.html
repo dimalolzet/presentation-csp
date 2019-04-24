@@ -66,7 +66,20 @@
 <section class="slide">
   <h1>CSP Level 2</h1>
 
-  <img src="pictures/browser-support-level2.png" alt="CSP Level 1">
+  <img src="pictures/browser-support-level2.png" alt="CSP Level 2">
+</section>
+
+<section class="slide">
+  <h1>CSP Level 3</h1>
+
+  <ul>
+    <li>pre-request check</li>
+    <li>post-request check</li>
+    <li>новые директивы</li>
+    <li>...</li>
+  </ul>
+
+  <img src="pictures/csp-level3.png" alt="CSP Level 3">
 </section>
 
 <section class="slide">
@@ -88,8 +101,8 @@
     <li>script-src</li>
     <li>style-src</li>
     <li>img-src</li>
-    <li>connect-src</li>
     <li>font-src</li>
+    <li>connect-src</li>
     <li>object-src</li>
     <li>media-src</li>
     <li>frame-src <span class="badge-mark badge-mark_red">Deprecated</span></li>
@@ -121,7 +134,7 @@
   </table>
 
   <p>
-    <a href="https://www.w3.org/TR/CSP2/#source_list">https://www.w3.org/TR/CSP2/#source_list</a>
+    <a target="_blank" href="https://www.w3.org/TR/CSP2/#source_list">https://www.w3.org/TR/CSP2/#source_list</a>
   </p>
 </section>
 
@@ -130,7 +143,7 @@
 
   <p>Задаёт стандартные политики, которые будут использованы в случае отсутствия следующих директив:</p>
 
-  <ul class="list-2col">
+  <ul class="list-4col">
     <li>child-src</li>
     <li>connect-src</li>
     <li>font-src</li>
@@ -140,6 +153,8 @@
     <li>script-src</li>
     <li>style-src</li>
   </ul>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-default-src">https://www.w3.org/TR/CSP2/#directive-default-src</a></p>
 </section>
 
 <section class="slide">
@@ -153,12 +168,14 @@
     <div><code>'unsafe-inline'</code> – разрешение инлайн script</div>
     <div><code>'unsafe-eval'</code> – разрешение функции eval</div>
   </p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-script-src">https://www.w3.org/TR/CSP2/#directive-script-src</a></p>
 </section>
 
 <section class="slide">
   <h1>style-src</h1>
 
-  <p>Контроль применяемых стилей</p>
+  <div>Контроль применяемых стилей</div>
 
   <p><code>style-src [source | keyword | hash]</code></p>
 
@@ -166,6 +183,117 @@
     <div><code>'unsafe-inline'</code> – разрешение инлайн тега и атрибута style</div>
     <div><code>'unsafe-eval'</code> – разрешение динамических стилей (<em>cssText</em>, <em>insertRule</em>)</div>
   </p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-style-src">https://www.w3.org/TR/CSP2/#directive-style-src</a></p>
+</section>
+
+<section class="slide">
+  <h1>img-src</h1>
+
+  <p>Контроль загружаемых изображений</p>
+
+  <p><code>img-src [source | keyword | hash]</code></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-img-src">https://www.w3.org/TR/CSP2/#directive-img-src</a></p>
+</section>
+
+<section class="slide">
+  <h1>font-src</h1>
+
+  <p>Контроль загружаемых шрифтов</p>
+
+  <p><code>font-src [source | keyword | hash]</code></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-font-src">https://www.w3.org/TR/CSP2/#directive-font-src</a></p>
+</section>
+
+<section class="slide">
+  <h1>connect-src</h1>
+
+  <p>Контроль сетевых запросов <br> (XMLHttpRequest, WebSocket, EventSource, sendBeacon)</p>
+
+  <p><code>connect-src [source | keyword | hash]</code></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-connect-src">https://www.w3.org/TR/CSP2/#directive-connect-src</a></p>
+</section>
+
+<section class="slide">
+  <h1>object-src</h1>
+
+  <p>Контроль встраиваемых объектов <br> (&lt;object&gt;, &lt;embed&gt;, &lt;applet&gt;)</p>
+
+  <p><code>object-src [source | keyword | hash]</code></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-object-src">https://www.w3.org/TR/CSP2/#directive-object-src</a></p>
+</section>
+
+<section class="slide">
+  <h1>media-src</h1>
+
+  <p>Контроль интегрируемых медиа элементов <br> (&lt;video&gt;, &lt;audio&gt;, &lt;source&gt;, &lt;track&gt;)</p>
+
+  <p><code>media-src [source | keyword | hash]</code></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-media-src">https://www.w3.org/TR/CSP2/#directive-media-src</a></p>
+</section>
+
+<section class="slide">
+  <h1><s>frame-src</s> child-src</h1>
+
+  <p>Контроль веб-воркеров и вложенных браузерных контекстов <br> (&lt;frame&gt;, &lt;iframe&gt;, Worker)</p>
+  <p>В будущем стандарте: <em>worker-src</em> <span class="badge-mark badge-mark_green">Level 3</span></p>
+
+  <p><code>child-src [source | keyword | hash]</code></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-child-src">https://www.w3.org/TR/CSP2/#directive-child-src</a></p>
+</section>
+
+<section class="slide">
+  <h1>sandbox</h1>
+
+  <p>Контроль возможностей айфреймов с атрибутом sandbox</p>
+
+  <p><code>sandbox [allow-forms | allow-pointer-lock | allow-popups | allow-same-origin | allow-scripts | allow-top-navigation]</code></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-sandbox">https://www.w3.org/TR/CSP2/#directive-sandbox</a></p>
+</section>
+
+<section class="slide">
+  <h1>form-action</h1>
+
+  <p>Контроль URL, которые могут использованы для атрибута action у форм</p>
+
+  <p><code>form-action [source | keyword | hash]</code></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-form-action">https://www.w3.org/TR/CSP2/#directive-form-action</a></p>
+</section>
+
+<section class="slide">
+  <h1>frame-ancestors</h1>
+
+  <p>
+    Контроль разрешенных ресурсов, которые могут встраивать текущий документ, используя &lt;frame&gt;, &lt;iframe&gt;, &lt;object&gt;, &lt;embed&gt;, &lt;applet&gt;
+  </p>
+
+  <p><code>frame-ancestors [source]</code></p>
+
+  <p><code>'none'</code> – эквивалент <code>X-Frame-Options: deny</code></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-frame-ancestors">https://www.w3.org/TR/CSP2/#directive-frame-ancestors</a></p>
+</section>
+
+<section class="slide">
+  <h1>plugin-types</h1>
+
+  <p>
+    Контроль MIME type встраиваемых &lt;embed&gt;, &lt;object&gt;, &lt;applet&gt;
+  </p>
+
+  <p><code>frame-ancestors [media-type]</code></p>
+
+  <p>Загружает ресурс только при условии нахождения его типа в белом списке и совпадении описанного типа с загружемым по факту</p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-plugin-types">https://www.w3.org/TR/CSP2/#directive-plugin-types</a></p>
 </section>
 
 <div class="progress"></div>

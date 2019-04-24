@@ -28,6 +28,10 @@ img {
   column-count: 3;
 }
 
+.list-4col {
+  column-count: 4;
+}
+
 .badge-mark {
   display: inline-block;
   font-size: 50%;
