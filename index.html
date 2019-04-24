@@ -147,14 +147,24 @@
 
   <p>Контроль исполняемых скриптов</p>
 
-  <p>
-    <div><code>script-src 'self' https://google.com</code></div>
-    <div><code>script-src 'unsafe-inline' *.example.com</code></div>
-  </p>
+  <p><code>script-src [source | keyword | hash]</code></p>
 
   <p>
     <div><code>'unsafe-inline'</code> – разрешение инлайн script</div>
     <div><code>'unsafe-eval'</code> – разрешение функции eval</div>
+  </p>
+</section>
+
+<section class="slide">
+  <h1>style-src</h1>
+
+  <p>Контроль применяемых стилей</p>
+
+  <p><code>style-src [source | keyword | hash]</code></p>
+
+  <p>
+    <div><code>'unsafe-inline'</code> – разрешение инлайн тега и атрибута style</div>
+    <div><code>'unsafe-eval'</code> – разрешение динамических стилей (<em>cssText</em>, <em>insertRule</em>)</div>
   </p>
 </section>
 
