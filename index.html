@@ -39,7 +39,8 @@
 <section class="slide">
   <h1>А попроще?</h1>
   <p>
-    <strong>CSP</strong> – штука, позволяющая сформировать белый список доверенных ресурсов, которые могут загружаться на веб-странице.
+    <strong>CSP</strong> – штука, позволяющая сформировать белый список доверенных ресурсов, которые могут загружаться
+    на веб-странице.
   </p>
 
   <br>
@@ -98,8 +99,8 @@
 
   <ul>
     <li>Конфигурация заголовка на веб-сервере</li>
-    <li>Добавление заголовка на уровне серверного приложения</li>
-    <li>&lt;meta&gt; тег на странице <em>(есть директивы-исключения)</em></li>
+    <li class="next">Добавление заголовка на уровне серверного приложения</li>
+    <li class="next">&lt;meta&gt; тег на странице (кроме <em>frame-ancestors</em>, <em>sandbox</em> и <em>report-uri</em>)</li>
   </ul>
 </section>
 
@@ -135,7 +136,8 @@
     </tr>
     <tr>
       <th>Keyword</th>
-      <td><code>*</code> <code>'none'</code> <code>'self'</code> <code>'unsafe-inline'</code> <code>'unsafe-eval'</code></td>
+      <td><code>*</code> <code>'none'</code> <code>'self'</code> <code>'unsafe-inline'</code> <code>'unsafe-eval'</code>
+      </td>
     </tr>
     <tr>
       <th>Hash</th>
@@ -164,7 +166,8 @@
     <li>style-src</li>
   </ul>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-default-src">https://www.w3.org/TR/CSP2/#directive-default-src</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-default-src">https://www.w3.org/TR/CSP2/#directive-default-src</a>
+  </p>
 </section>
 
 <section class="slide">
@@ -175,11 +178,12 @@
   <p><code>script-src [source | keyword | hash]</code></p>
 
   <p>
-    <div><code>'unsafe-inline'</code> – разрешение инлайн script</div>
-    <div><code>'unsafe-eval'</code> – разрешение функции eval</div>
+  <div><code>'unsafe-inline'</code> – разрешение инлайн script</div>
+  <div><code>'unsafe-eval'</code> – разрешение функции eval</div>
   </p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-script-src">https://www.w3.org/TR/CSP2/#directive-script-src</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-script-src">https://www.w3.org/TR/CSP2/#directive-script-src</a>
+  </p>
 </section>
 
 <section class="slide">
@@ -190,11 +194,12 @@
   <p><code>style-src [source | keyword | hash]</code></p>
 
   <p>
-    <div><code>'unsafe-inline'</code> – разрешение инлайн тега и атрибута style</div>
-    <div><code>'unsafe-eval'</code> – разрешение динамических стилей (<em>cssText</em>, <em>insertRule</em>)</div>
+  <div><code>'unsafe-inline'</code> – разрешение инлайн тега и атрибута style</div>
+  <div><code>'unsafe-eval'</code> – разрешение динамических стилей (<em>cssText</em>, <em>insertRule</em>)</div>
   </p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-style-src">https://www.w3.org/TR/CSP2/#directive-style-src</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-style-src">https://www.w3.org/TR/CSP2/#directive-style-src</a>
+  </p>
 </section>
 
 <section class="slide">
@@ -204,7 +209,8 @@
 
   <p><code>img-src [source | keyword | hash]</code></p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-img-src">https://www.w3.org/TR/CSP2/#directive-img-src</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-img-src">https://www.w3.org/TR/CSP2/#directive-img-src</a>
+  </p>
 </section>
 
 <section class="slide">
@@ -214,7 +220,8 @@
 
   <p><code>font-src [source | keyword | hash]</code></p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-font-src">https://www.w3.org/TR/CSP2/#directive-font-src</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-font-src">https://www.w3.org/TR/CSP2/#directive-font-src</a>
+  </p>
 </section>
 
 <section class="slide">
@@ -224,7 +231,8 @@
 
   <p><code>connect-src [source | keyword | hash]</code></p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-connect-src">https://www.w3.org/TR/CSP2/#directive-connect-src</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-connect-src">https://www.w3.org/TR/CSP2/#directive-connect-src</a>
+  </p>
 </section>
 
 <section class="slide">
@@ -234,7 +242,8 @@
 
   <p><code>object-src [source | keyword | hash]</code></p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-object-src">https://www.w3.org/TR/CSP2/#directive-object-src</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-object-src">https://www.w3.org/TR/CSP2/#directive-object-src</a>
+  </p>
 </section>
 
 <section class="slide">
@@ -244,7 +253,8 @@
 
   <p><code>media-src [source | keyword | hash]</code></p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-media-src">https://www.w3.org/TR/CSP2/#directive-media-src</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-media-src">https://www.w3.org/TR/CSP2/#directive-media-src</a>
+  </p>
 </section>
 
 <section class="slide">
@@ -255,7 +265,8 @@
 
   <p><code>child-src [source | keyword | hash]</code></p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-child-src">https://www.w3.org/TR/CSP2/#directive-child-src</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-child-src">https://www.w3.org/TR/CSP2/#directive-child-src</a>
+  </p>
 </section>
 
 <section class="slide">
@@ -263,9 +274,11 @@
 
   <p>Контроль возможностей айфреймов с атрибутом sandbox</p>
 
-  <p><code>sandbox [allow-forms | allow-pointer-lock | allow-popups | allow-same-origin | allow-scripts | allow-top-navigation]</code></p>
+  <p><code>sandbox [allow-forms | allow-pointer-lock | allow-popups | allow-same-origin | allow-scripts |
+    allow-top-navigation]</code></p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-sandbox">https://www.w3.org/TR/CSP2/#directive-sandbox</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-sandbox">https://www.w3.org/TR/CSP2/#directive-sandbox</a>
+  </p>
 </section>
 
 <section class="slide">
@@ -275,21 +288,24 @@
 
   <p><code>form-action [source | keyword | hash]</code></p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-form-action">https://www.w3.org/TR/CSP2/#directive-form-action</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-form-action">https://www.w3.org/TR/CSP2/#directive-form-action</a>
+  </p>
 </section>
 
 <section class="slide">
   <h1>frame-ancestors</h1>
 
   <p>
-    Контроль разрешенных ресурсов, которые могут встраивать текущий документ, используя &lt;frame&gt;, &lt;iframe&gt;, &lt;object&gt;, &lt;embed&gt;, &lt;applet&gt;
+    Контроль разрешенных ресурсов, которые могут встраивать текущий документ, используя &lt;frame&gt;, &lt;iframe&gt;,
+    &lt;object&gt;, &lt;embed&gt;, &lt;applet&gt;
   </p>
 
   <p><code>frame-ancestors [source]</code></p>
 
   <p><code>'none'</code> – эквивалент <code>X-Frame-Options: deny</code></p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-frame-ancestors">https://www.w3.org/TR/CSP2/#directive-frame-ancestors</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-frame-ancestors">https://www.w3.org/TR/CSP2/#directive-frame-ancestors</a>
+  </p>
 </section>
 
 <section class="slide">
@@ -299,11 +315,83 @@
     Контроль MIME type встраиваемых &lt;embed&gt;, &lt;object&gt;, &lt;applet&gt;
   </p>
 
-  <p><code>frame-ancestors [media-type]</code></p>
+  <p><code>plugin-types [media-type]</code></p>
 
-  <p>Загружает ресурс только при условии нахождения его MIME type в белом списке и совпадении указанного типа с загружемым по факту</p>
+  <p>Загружает ресурс только при условии нахождения его MIME type в белом списке и совпадении указанного типа с
+    загружемым по факту</p>
 
-  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-plugin-types">https://www.w3.org/TR/CSP2/#directive-plugin-types</a></p>
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-plugin-types">https://www.w3.org/TR/CSP2/#directive-plugin-types</a>
+  </p>
+</section>
+
+<section class="slide">
+  <h1>base-uri</h1>
+
+  <p>Контроль доступных URI для &lt;base&gt; тега</p>
+
+  <p><code>base-uri [source]</code></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-base-uri">https://www.w3.org/TR/CSP2/#directive-base-uri</a>
+  </p>
+</section>
+
+<section class="slide">
+  <h1>report-uri</h1>
+
+  <p>Указание URI, на который будет отправлен POST запрос с мета-информацией о нарушении политики CSP</p>
+
+  <p><code>report-uri [source]</code></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-report-uri">https://www.w3.org/TR/CSP2/#directive-report-uri</a>
+  </p>
+</section>
+
+<section class="slide">
+  <h1>Что там в репорте?</h1>
+
+  <p><img src="pictures/csp-report.png" alt="Report"></p>
+
+  <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#violation-reports">https://www.w3.org/TR/CSP2/#violation-reports</a>
+  </p>
+</section>
+
+<section class="slide">
+  <h1>Report-Only режим</h1>
+
+  <p><code>Content-Security-Policy-Report-Only: ...</code></p>
+
+  <p>
+    Абсолютно идентичен основному заголовку, но работает исключительно в режиме уведомлений.
+    То есть, ресурсы <strong>не</strong> блокируются, но отчёты формируются.
+  </p>
+
+  <p>Отлично подходит для постепенного внедрения в приложение.</p>
+</section>
+
+<section class="slide">
+  <h1>Сферический пример в вакууме</h1>
+
+  <p><img src="pictures/csp-header-example.png" alt="Header"></p>
+
+  <p><em>Все странности и совпадения с реальным проектом случайны</em> 😏</p>
+</section>
+
+<section class="slide">
+  <h1>Пара советов</h1>
+
+  <ul>
+    <li>Используйте CSP :)</li>
+    <li class="next">Не забывайте про переопределение дефолтной директивы</li>
+    <li class="next">Иногда проверяйте доверенные источники на случаи компрометации</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h1>Ссылки</h1>
+</section>
+
+<section class="slide">
+  <h1>Спасибо и всё такое</h1>
 </section>
 
 <div class="progress"></div>
