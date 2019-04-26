@@ -110,7 +110,7 @@
   <ul>
     <li>Конфигурация заголовка на веб-сервере</li>
     <li class="next">Добавление заголовка на уровне серверного приложения</li>
-    <li class="next">&lt;meta&gt; тег на странице (кроме <em>frame-ancestors</em>, <em>sandbox</em> и <em>report-uri</em>)</li>
+    <li class="next"><code>&lt;meta&gt;</code> тег на странице (кроме <em>frame-ancestors</em>, <em>sandbox</em> и <em>report-uri</em>)</li>
   </ul>
 </section>
 
@@ -206,7 +206,7 @@
   <p><code>style-src [source | keyword | hash]</code></p>
 
   <p>
-  <div><code>'unsafe-inline'</code> – допуск инлайн тега и атрибута style</div>
+  <div><code>'unsafe-inline'</code> – допуск инлайн тега и атрибута style <sup><span style="color: #f44336">*</span><em>CSS-in-JS</em></sup></div>
   <div><code>'unsafe-eval'</code> – допуск динамических стилей (<em>cssText</em>, <em>insertRule</em>)</div>
   </p>
 
@@ -285,9 +285,10 @@
     Контроль веб-воркеров и вложенных браузерных контекстов <br>
     <code>&lt;frame&gt;</code>, <code>&lt;iframe&gt;</code>, <code>Worker</code>
   </p>
-  <p>В будущем стандарте: <em>worker-src</em> <span class="badge-mark badge-mark_green">Level 3</span></p>
 
   <p><code>child-src [source | keyword | hash]</code></p>
+
+  <p>В будущем стандарте: <em>worker-src</em> <span class="badge-mark badge-mark_green">Level 3</span></p>
 
   <p><a target="_blank" href="https://www.w3.org/TR/CSP2/#directive-child-src">https://www.w3.org/TR/CSP2/#directive-child-src</a>
   </p>
@@ -308,7 +309,7 @@
 <section class="slide">
   <h2>form-action</h2>
 
-  <p>Контроль URL, которые могут использованы для атрибута <em>action</em> у форм</p>
+  <p>Контроль значений атрибута <em>action</em> у тега <code>&lt;form&gt;</code></p>
 
   <p><code>form-action [source | keyword | hash]</code></p>
 
@@ -408,7 +409,6 @@
   <ul>
     <li>Используйте CSP :)</li>
     <li class="next">Используйте <code>Report-Only</code> заголовок для безопасного внедрения</li>
-    <li class="next">CSS-in-JS – путь к <code>style-src: 'unsafe-inline'</code></li>
     <li class="next">Не забывайте про переопределение дефолтной директивы</li>
     <li class="next">Помните, что запрещено всё, что не разрешено</li>
     <li class="next">Иногда проверяйте доверенные источники на случаи компрометации</li>
