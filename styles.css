@@ -20,6 +20,13 @@ img {
   opacity: .7;
 }
 
+#fry-insane {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-height: 30%;
+}
+
 .list-2col {
   column-count: 2;
 }
